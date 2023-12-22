@@ -1,0 +1,42 @@
+@import "./variables";
+@import "./media_query";
+$breakpoints: (
+  "phone": 450px,
+  "tablet": 900px,
+  "desktop": 1024px,
+);
+
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x":
+    "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)",
+  "retina3x":
+    "(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi), (min-resolution: 3dppx)",
+);
+
+// html,
+// body {
+// 	overflow-x: hidden !important;
+// 	::-webkit-scrollbar {
+// 		width: 0px;
+// 	}
+
+// 	/* Track */
+// 	::-webkit-scrollbar-track {
+// 		background: transparent;
+// 	}
+
+// 	/* Handle */
+// 	::-webkit-scrollbar-thumb {
+// 		background: $GOLD;
+// 	}
+
+// 	/* Handle on hover */
+// 	::-webkit-scrollbar-thumb:hover {
+// 		background: $GOLD;
+// 	}
+// }
